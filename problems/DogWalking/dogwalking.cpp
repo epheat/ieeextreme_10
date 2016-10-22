@@ -41,7 +41,19 @@ int main() {
 
 int find_optimal_distribution(int dogs, int walkers, vector<int> dog_sizes) {
 	
-	return 1;
+	if(dogs == walkers) {
+		return 0;
+	} else {
+		//actual work
+		sort(dog_sizes.begin(), dog_sizes.end());
+		int extra = dogs % walkers;
+		vector< vector<int> > assignments;
+		for(int i = 0; i < walkers; i++) {
+			vector<int> buff;
+			assignments.push_back(buff);
+		}
+		
+	}
 }
 
 string vec_to_string(vector<int> v) {
