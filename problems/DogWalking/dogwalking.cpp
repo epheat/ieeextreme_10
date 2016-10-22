@@ -56,6 +56,16 @@ int find_optimal_distribution(int dogs, int walkers, vector<int> dog_sizes) {
 	}
 }
 
+int get_sum_of_differences(vector<vector<int> > assignments) {
+	int sum = 0;
+	for (int i=0; i<assignments.size(); i++) {
+		
+	
+	
+	}
+	
+}
+
 string vec_to_string(vector<int> v) {
 	if (v.size() == 0) {
 		return "<>";
