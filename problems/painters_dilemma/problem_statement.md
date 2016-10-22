@@ -10,32 +10,34 @@ Given a sequence of colors c1, c2, …, cN that Bob needs, in the order that he 
 
 Bob may ask you to compute this number for a few different scenarios, but not many. After all, he only needs to do this until he gets his first paycheck, at which point all his effort will have been worth the trouble, and he can go buy more paint brushes.
 
-Input Format
+### Input Format
 
 The first line of input contains t, 1 ≤ t ≤ 5, which gives the number of scenarios.
 
 Each scenario consists of two lines. The first line contains an integer N, the length of the sequence of colors Bob needs. The second line contains a sequence of N integers c1, c2, …, cN, representing the sequence of colors that Bob needs, in the order that he needs them. Each distinct color is represented with a distinct integer.
 
-Constraints
+### Constraints
 
-1 ≤ N ≤ 500, 1 ≤ ci ≤ 20
+`1 ≤ N ≤ 500, 1 ≤ ci ≤ 20`
 
-Output Format
+### Output Format
 
 For each scenario, you should output, on a line by itself, the minimum number of times Bob needs to change the color of one of his brushes.
 
-Sample Input
+### Sample Input
 
-2
+`2
 5
 7 7 2 11 7
 10
-9 1 7 6 9 9 8 7 6 7
-Sample Output
+9 1 7 6 9 9 8 7 6 7`
 
-3
-6
-Explanation
+### Sample Output
+
+`3
+6`
+
+### Explanation
 
 In the first scenario, Bob needs to paint using the colors 7, 7, 2, 11, and 7, in that order. He could start by applying color 7 to the first brush. Then he can use the first brush for the first two times. The third time he needs the color 2. He could apply that color to his second brush, and thus use his second brush for the third time. Next he needs the color 11, so he might apply this color to the first brush, and use the first brush this time. Finally, he needs the color 7 just as before. But the first brush no longer has this color, so we need to reapply it. Just as an example, he could apply 7 to the second brush, and then use the second brush. In total, he had to change the color of one of his brushes 4 times.
 
